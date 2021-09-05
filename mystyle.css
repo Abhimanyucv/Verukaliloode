@@ -1,0 +1,372 @@
+body {font-family: 'Gayathri', sans-serif;}
+}
+
+
+.centered {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bannerQuote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bannerQuote p{
+  text-shadow:3px 3px #000000;
+  font-size: 50px;
+  color: #fff1ff;
+  font-weight: bold;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 900px){
+  .bannerQuote p{
+  	font-size:20px;
+  }
+  .bgimg{
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .bannerQuote p{
+    padding-top: 40px;
+    font-size: 14px;
+  }
+}
+
+/*TOP Navigation bar*/
+.topcolor{
+  background-color:#000000;
+  opacity: 0.9;
+}
+.topcolor h1{
+	color: #ffffff;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.topButton{
+	display: inline-block;
+	float: right;
+}
+.topButton a{
+	float: right;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 12px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: inherit;
+    color: #ffffff; 
+    border: none;
+}
+
+.topButton a:hover{
+  color: #00cc66;
+}
+.menuButton{
+  float: left;
+  padding: 4px 10px;
+  text-align: center;
+  text-decoration:none;
+  display: inline-block;
+  font-size: 28px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: inherit;
+  color: #ffffff; 
+  border: none;   
+}
+.menuButton:hover{
+  color: #00cc66;
+}
+
+@media only screen and (max-width: 600px){
+  .menuButton{
+  	float: none;
+  	font-size: 20px;
+  	margin: 0px 0px;
+  	transform: translate(80%);
+  }
+  .topButton{
+  	width: 100;
+  }
+  .topButton a{
+  	font-size: 14px;
+  	margin: 0px 0px;
+  	transform: translate(-80%);
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .menuButton{
+    float: left;
+    font-size: 20px;
+    margin: 0px 0px;
+  }
+  .topButton{
+    width: 100;
+  }
+  .topButton a{
+    font-size: 14px;
+    margin: 0px 0px;
+    transform: translate(-80%);
+  }
+}
+
+/*Back button*/
+.backButton{
+  float: left;
+  padding: 4px 10px;
+  text-align: center;
+  text-decoration:none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 10px 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: inherit;
+  color: #ffffff; 
+  border: none;   
+}
+.backButton:hover{
+  color: #00cc66;
+}
+
+/*Card -rows*/
+.row {
+  margin: 8px -16px;
+}
+
+.row a{
+	text-decoration: none;
+}
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Cards */
+.content {
+  background-color: #e6e6e6;
+  padding: 10px;
+  color: #000000;
+}
+
+.content:hover{
+ background-color: #33ff99;
+}
+
+ .content h4{
+  font-weight: bold;
+  text-align: center;
+ }
+ .column a{
+ 	text-decoration: none;
+ }
+
+ .content p{
+  font-style: italic;
+ }
+
+@media only screen and (max-width: 900px){
+  .column{
+    width: 100%;
+  }
+  .row {
+  margin: 0px 0px;
+}
+}
+
+@media only screen and (max-width: 600px){
+  .column{
+  	width: 100%;
+  }
+  .row {
+  margin: 0px 0px;
+}
+}
+
+
+/*Image Card*/
+
+div.polaroid {
+  float: left;
+  width: 22%;
+  margin: 10px;
+  padding: 10px 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 10px;
+}
+.polaroid:hover{
+	background-color: #33ff99;
+}
+
+.polaroid img{
+	height: 200px
+}
+
+@media only screen and (max-width: 900px){
+  div.polaroid {
+  width: 45%;
+}
+}
+
+@media only screen and (max-width: 600px){
+  div.polaroid {
+  width: 80%;
+}
+}
+
+
+
+div.container {
+  text-align: center;
+  padding: 4px 4px;
+}
+
+.container p{
+	font-weight: bold;
+}
+
+/*Show writings*/
+
+.writeup{
+	width: 50%;
+	float: right;
+}
+.writeup p{
+	font-size: 20px;
+}
+.writeupImg{
+	padding-top: 30px;
+	width: 45%;
+	float: left;
+}
+.writeupImg p{
+	font-style: italic;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+}
+
+@media only screen and (max-width: 700px){
+	.writeup{
+	width: 100%;
+	}
+	.writeup p{
+	font-size: 14px;
+	text-align: center;
+	}
+  .writeupImg{
+	padding-top: 30px;
+	width: 100%;
+	}
+}
+
+@media only screen and (max-width: 500px){
+  .writeup{
+	width: 100%;
+	}
+	.writeup p{
+	font-size: 14px;
+	text-align: center;
+	}
+  .writeupImg{
+	padding-top: 30px;
+	width: 100%;
+	}
+}
+
+/*Quote carrier
+div.quote {
+  float: left;
+  width: 30%;
+  margin: 10px;
+  padding: 10px 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 10px;
+}
+.quote:hover{
+	background-color: #33ff99;
+}
+
+.quote img{
+	height: auto;
+}
+
+div.quoteCarry {
+  text-align: center;
+  padding: 4px 4px;
+}
+
+.quoteCarry h5{;
+	font-weight: bold;
+	font-size: 20px;
+}*/
+
+.quote{
+	width: 80%;
+	float: left;
+	border-left: 8px solid #808080;
+	margin-top: 6px;
+    margin-bottom: 6px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.quote p{
+	font-weight: bold;
+	font-size: 26px;
+	text-align: justify;
+	margin-block-start: 8px;
+    margin-block-end: 2px;
+}
+.quote .small{
+	font-weight: bold;
+	color: #808080;
+	font-size: 16px;
+}
+.quote .large{
+	font-weight: bold;
+	font-size: 36px;
+}
+.quote:hover{
+	transition-duration: .2s;
+}
+
+@media only screen and (max-width: 500px){
+  .quote p{
+  font-size: 18px;
+  padding-left: 20px;
+}
+}
+
+@media only screen and (max-width: 900px){
+  .quote p{
+  font-size: 18px;
+  padding-left: 20px;
+}
+}
