@@ -1,0 +1,412 @@
+body {font-family: "Lato", sans-serif;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgcreated {
+  background-image: url("bgimg.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rotate {
+  animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.mySlides {display: none}
+
+/*Navigation Bar*/
+.slidewindow {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  background-color: #111;
+  overflow: scroll;
+  transition: 0.5s;
+ 
+  }
+.slidewindow a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+}
+.slidewindow .closebtn {
+  position: absolute;
+  top: 0;
+  left: 12px;
+  font-size: 30px;
+  color: #ffffff;
+  margin-left: 0px;
+}
+.slidewindow .closebtn:hover {
+  font-size: 26px;
+  transition: 0.3s;
+  color: #ffff00;
+}
+
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.slidebar {
+  float: left;
+  background-color: #1a1a1a;
+  width: 20%;
+  height: 100%;
+  padding-top: 60px;
+}
+
+.slidebar button {
+  display: block;
+  background-color: inherit;
+  color: #ffffff;
+  padding: 16px 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.slidebar button:hover {
+  color: #ffff00;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* Create an active/current "tab button" class */
+.slidebar button.active {
+  background-color: #ffff00;
+  color: #000000;
+  transition: 0.3s;
+}
+  
+/* content */
+.slidebarcontent {
+  float: left;
+  padding-top: 60px;
+  padding: 0px 20px;
+  width: 80%;
+  height: 100%;
+  background-color: inherit;
+  color: #ffffff;
+}
+.logo-rot {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color:inherit;
+  z-index: 2;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  color: #ffffff;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  color: #ffff00; 
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  border-bottom: 4px solid;
+  color: #ffff00; 
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+.ctimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.topcolor{
+  background-color:none;
+}
+
+.topButton{
+    float: right;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: inherit;
+    color: #ffffff; 
+    border: none;
+}
+
+.topButton:hover{
+  color: #ffff00;
+}
+.menuButton{
+  float: left;
+  padding: 4px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: inherit;
+  color: #ffffff; 
+  border: none;   
+}
+
+.menuButton:hover{
+  color: #ffff00;
+}
+
+
+ /*Menu Item show*/
+.menuitem {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+.menuitem button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.menuitem button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.menuitem button.active {
+  background-color: #ccc;
+}
+.menuitemExpand {
+  display: none;
+  float: right;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+
+/*Product list*/
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  color: #000000;
+}
+
+.content img{
+  max-width: 150px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+ .content h4{
+  font-weight: bold;
+  text-align: center;
+ }
+ .content h6{
+  font-weight: bold;
+ }
+
+
+ .content p{
+  font-style: italic;
+ }
+
+ .usr-description{
+  padding-bottom: 20px;
+ }
+ .usr-description h3{
+  text-align: center;
+  font-weight: bold;
+  padding: 6px 4px;
+  background-color: #ffff00;
+  color: #000000;
+ }
+ .usr-description ul,h5{
+  text-align: left;
+ }
+ 
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/*Product image */
+.pdtcolumn {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.pdtcolumn img {
+  opacity: 1; 
+  cursor: pointer; 
+}
+
+.pdtcolumn img:hover {
+  transform: scale(1.1);
+}
+/* Clear floats after the columns */
+.pdtrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.pdtcontainer {
+  position: relative;
+  display: block;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/*user card*/
+.ucard-container {
+  position: relative;
+  width: 50%;
+  max-width: 250px;
+  display: inline-block;
+  padding: 6px 6px;
+}
+
+.ucard-image {
+  width: 100%;
+  height: auto;
+}
+
+.ucard-overlay {
+  position: inherit; 
+  bottom: 70px; 
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.ucard-container:hover .ucard-overlay {
+  opacity: 1;
+}
